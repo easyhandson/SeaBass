@@ -1,0 +1,19 @@
+--- #################### 服务相关配置(路径,端口...) ####################
+server:
+  port: 8888
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /example
+
+--- #################### 日志相关 ####################
+# 日志文件配置
+logging:
+  file:
+    name: ${user.home}/logs/${spring.application.name}  # 日志文件存放路径 示例: C:\Users\MSI\logs\gbk-module-datasource
+
+--- #################### 项目相关配置(配置文件选择, 服务名称, 数据库相关配置...) ####################
+spring:
+  application:
+    name: seabass-example
+
