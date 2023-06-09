@@ -35,6 +35,9 @@
         <mybatis-plus-generator.version>3.5.2</mybatis-plus-generator.version> <!-- mybatis-plus 使用, 用来快速生成实体类, service等... -->
         <velocity.engine.core>2.0</velocity.engine.core> <!-- mybatis-plus-generator使用所需 -->
         <redisson.version>3.17.0</redisson.version> <!-- 封装了redis分布式锁等相关的依赖 -->
+        <!-- web 相关 -->
+        <knife4j.version>3.0.3</knife4j.version> <!-- 在swagger基础上改造的接口文档, 比swagger更好看 -->
+        <swagger-annotations.version>1.5.22</swagger-annotations.version> <!-- 接口文档生成使用 -->
         <!-- 工具类相关 -->
         <lombok.version>1.18.20</lombok.version>
         <hutool.version>5.8.19</hutool.version>  <!-- 工具类大集合 -->
@@ -119,6 +122,34 @@
                 <version>${redisson.version}</version>
             </dependency>
             <!-- Redis相关  end -->
+
+            <!-- Spring web  start -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>mapstruct</artifactId>
+                        <groupId>org.mapstruct</groupId> <!-- 避免冲突 -->
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>guava</artifactId>
+                        <groupId>com.google.guava</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>swagger-annotations</artifactId>
+                        <groupId>io.swagger</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.swagger/swagger-annotations -->
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger-annotations.version}</version>
+            </dependency>
+            <!-- Spring web  end -->
 
             <!-- 工具类  start -->
             <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
