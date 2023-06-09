@@ -42,6 +42,7 @@
         <lombok.version>1.18.20</lombok.version>
         <hutool.version>5.8.19</hutool.version>  <!-- 工具类大集合 -->
         <guava.version>31.1-jre</guava.version> <!-- google的工具类大集合 -->
+        <mapstruct.version>1.4.1.Final</mapstruct.version> <!-- 字段赋值 -->
         <easyexcel.verion>3.3.2</easyexcel.verion> <!-- excel处理 -->
     </properties>
     
@@ -173,6 +174,23 @@
                 <version>${guava.version}</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/org.mapstruct/mapstruct -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-jdk8</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+
             <!-- https://mvnrepository.com/artifact/com.alibaba/easyexcel -->
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -192,6 +210,11 @@
             <dependency>
                 <groupId>cn.com.seabase</groupId>
                 <artifactId>seabass-common</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.com.seabase</groupId>
+                <artifactId>seabass-spring-boot-starter-web</artifactId>
                 <version>${revision}</version>
             </dependency>
         </dependencies>

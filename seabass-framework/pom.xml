@@ -12,6 +12,7 @@
     
     <modules>
         <module>seabass-common</module>
+        <module>seabass-spring-boot-starter-web</module>
     </modules>
 
     <artifactId>seabass-framework</artifactId>

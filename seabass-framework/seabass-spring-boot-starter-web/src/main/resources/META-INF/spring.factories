@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.com.seabase.framework.web.config.WebAutoConfiguration,\
+  cn.com.seabase.framework.swagger.config.SwaggerAutoConfiguration,\
+  cn.com.seabase.framework.jackson.config.JacksonAutoConfiguration
