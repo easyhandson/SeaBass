@@ -10,7 +10,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>seabass-example</artifactId>
+    <artifactId>seabass-module-example</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>示例模块</description>
