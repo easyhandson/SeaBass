@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.com.seabase.framework.mybatis.config.MybatisAutoConfiguration

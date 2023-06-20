@@ -13,6 +13,7 @@
     <modules>
         <module>seabass-common</module>
         <module>seabass-spring-boot-starter-web</module>
+        <module>seabass-spring-boot-starter-mybatis</module>
     </modules>
 
     <artifactId>seabass-framework</artifactId>

@@ -34,6 +34,7 @@
         <mybatis-plus.version>3.5.0</mybatis-plus.version>
         <mybatis-plus-generator.version>3.5.2</mybatis-plus-generator.version> <!-- mybatis-plus 使用, 用来快速生成实体类, service等... -->
         <velocity.engine.core>2.0</velocity.engine.core> <!-- mybatis-plus-generator使用所需 -->
+        <dynamic-datasource.version>3.5.0</dynamic-datasource.version> <!-- mybatis-plus多数据源使用 -->
         <redisson.version>3.17.0</redisson.version> <!-- 封装了redis分布式锁等相关的依赖 -->
         <!-- web 相关 -->
         <knife4j.version>3.0.3</knife4j.version> <!-- 在swagger基础上改造的接口文档, 比swagger更好看 -->
@@ -112,6 +113,13 @@
                 <groupId>org.apache.velocity</groupId>
                 <artifactId>velocity-engine-core</artifactId>
                 <version>${velocity.engine.core}</version>
+            </dependency>
+            <!-- 多数据源 -->
+            <!-- https://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot-starter -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>${dynamic-datasource.version}</version>
             </dependency>
             <!-- DB相关  end -->
 
@@ -215,6 +223,11 @@
             <dependency>
                 <groupId>cn.com.seabase</groupId>
                 <artifactId>seabass-spring-boot-starter-web</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.com.seabase</groupId>
+                <artifactId>seabass-spring-boot-starter-mybatis</artifactId>
                 <version>${revision}</version>
             </dependency>
         </dependencies>
