@@ -8,8 +8,6 @@ import lombok.Data;
 @Data
 public class GeneratorInfo {
     
-    private String outputDir;
-    
     /** 数据库url */
     private String url;
     
@@ -18,5 +16,14 @@ public class GeneratorInfo {
     
     /** 数据库密码 */
     private String password;
+    
+    /** 数据源 */
+    private String datasource;
+    
+    /** controller,service,entity,mapper 等生成的位置 */
+    private String javaDir;
+    
+    /** mapper.xml 生成的位置 */
+    private String xmlMapperDir;
     
 }
