@@ -7,7 +7,7 @@ USE `seabass_user`;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
-/* 活动表 */
+/* 用户表 */
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
     `id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
@@ -16,7 +16,7 @@ CREATE TABLE `user` (
     `nickname` VARCHAR(100) NOT NULL COMMENT '昵称',
     `balance` DECIMAL(10, 0) NOT NULL DEFAULT 0 COMMENT '余额',
     PRIMARY KEY (`id`)
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COMMENT='产品表';
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COMMENT='用户表';
 
 /* 清空表数据并初始化 */
 BEGIN;
@@ -37,7 +37,7 @@ USE `seabass_product`;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
-/* 活动表 */
+/* 产品表 */
 DROP TABLE IF EXISTS `product`;
 CREATE TABLE `product` (
     `id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
@@ -67,7 +67,7 @@ USE `seabass_order`;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
-/* 活动表 */
+/* 订单表 */
 DROP TABLE IF EXISTS `order`;
 CREATE TABLE `order` (
     `id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
